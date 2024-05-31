@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./index.js"></script>
+    <title>Filtered Water</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Water Filter</h1>
+      <div class="box">
+        <p>Enter items in water separated by a comma:</p>
+        <label for="waterInput">Water Contaminants:</label>
+        <input type="text" name="waterInput" id="waterInput" value="salt, dirt, calcite, uranium, rubber" />
+        <label for="filter">Filter out:</label>
+        <input type="text" name="filter" id="filter" value="uranium, dirt" />
+        <button type="button" id="filter" onclick="filterWater()">Filter Water</button>
+        <div id="filter-out"></div>
+      </div>
+    </div>
+  </body>
+</html>
